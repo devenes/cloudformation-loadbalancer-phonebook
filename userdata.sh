@@ -9,10 +9,11 @@ echo "${MyDBURI}" > /home/ec2-user/dbserver.endpoint
 # Add GitHub Token if your repository is private
 # TOKEN="****************************************"
 # FOLDER="https://$TOKEN@raw.githubusercontent.com/devenes/private-projects/main/Phonebook-Application/"
-FOLDER="https://raw.githubusercontent.com/devenes/private-projects/main/Phonebook-Application/"
+FOLDER="https://raw.githubusercontent.com/devenes/cloudformation-loadbalancer-phonebook/main/"
 curl -s --create-dirs -o "/home/ec2-user/templates/index.html" -L "$FOLDER"templates/index.html
 curl -s --create-dirs -o "/home/ec2-user/templates/add-update.html" -L "$FOLDER"templates/add-update.html
 curl -s --create-dirs -o "/home/ec2-user/templates/delete.html" -L "$FOLDER"templates/delete.html
 curl -s --create-dirs -o "/home/ec2-user/phonebook-app.py" -L "$FOLDER"phonebook-app.py
 python3 /home/ec2-user/phonebook-app.py
+# Get Database Endpoint from CloudFormation as a variable:
 # - MyDBURI: !GetAtt MyDatabaseServer.Endpoint.Address
