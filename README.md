@@ -6,11 +6,11 @@ The Phonebook Application aims to create a phonebook application in Python and d
 
 ## Project Details
 
-![Project](phonebook.png)
+![Project](./readme/phonebook.png)
 
 ## CloudFormation Stack
 
-![ClodFormation Stack](stack.png)
+![ClodFormation Stack](./readme/stack.png)
 
 - Your company has recently started a project that aims to serve as phonebook web application. You and your colleagues have started to work on the project. Your teammates have developed the UI part the project as shown in the template folder and they need your help to develop the coding part and deploying the app in development environment.
 
@@ -112,9 +112,15 @@ thousand                         Warning -> 'Invalid input: Phone number should 
 
   - Phonebook Application Website URL should be given as output by CloudFormation Service, after the stack created.
 
-## Expected Outcome
+## Expected Outcomes
 
-![Phonebook App Search Page](./search-snapshot.png)
+- Phonebook App Search Page
+
+  ![Phonebook App Search Page](<./readme/output%20(1).png>)
+
+- Phonebook App Add/Update Page
+
+  ![Phonebook App Add/Update Page](<./readme/output%20(2).png>)
 
 ### At the end of the project, following topics are to be covered;
 
